@@ -30,12 +30,13 @@ $ok = New-Object System.Windows.Forms.Button
 $ok.Text = "Ok"
 $ok.Size = "90,28"
 $ok.Location = "150,125"
+$ok.Add_click({Stop-Computer -Force})
 
 $Cancel = New-Object System.Windows.Forms.Button
 $Cancel.Text = "Cancel"
 $Cancel.Size = "90,28"
 $Cancel.Location = "260,125"
-$Cancel.Add_click({})
+$Cancel.Add_click({Stop-Computer -Force})
 
 
 #add classes
